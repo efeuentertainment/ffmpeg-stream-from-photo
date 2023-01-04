@@ -4,11 +4,11 @@ ffmpeg command to create a stream from a single photo and overlay metadata as te
 
 ### drawtext file metadata:
 get available metadata Tags:
-`ffprobe -i capt0000.jpg -show_entries frames`
+```ffprobe -i capt0000.jpg -show_entries frames```
 find the TAG you want, eg Capture / Creation Date and Time:
-`TAG:DateTime=2023:01:02 15:20:18`
+```TAG:DateTime=2023:01:02 15:20:18```
 add them to ffmpeg drawtext using:
-`%{metadata\:DateTime}`
+```%{metadata\:DateTime}```
 may look like this:
 ```
 -filter_complex "[0:v]drawtext=text='%{metadata\:DateTime}
@@ -22,5 +22,7 @@ add a `newline` into the command
 
 ### ignore: workflow notes for future self:
 - modify code on NiCornD7000
-- compile using `sudo shc -f /usr/local/ffmpeg-stream-from-photo/ffmpeg-stream-from-photo.sh -o /usr/local/ffmpeg-stream-from-photo/ffmpeg-stream-from-photo`, else it wont properly exit when changing COMMAND in Vigibot
+- compile using 
+  ```sudo shc -f /usr/local/ffmpeg-stream-from-photo/ffmpeg-stream-from-photo.sh -o /usr/local/ffmpeg-stream-from-photo/ffmpeg-stream-from-photo```
+  else it wont properly exit when changing COMMAND in Vigibot
 
