@@ -41,7 +41,8 @@ multiple lines https://stackoverflow.com/questions/8213865/ffmpeg-drawtext-over-
 
 ### histogram
 `ffmpeg-histogram.sh`  
-
+doc https://trac.ffmpeg.org/wiki/Histogram  
+overlay https://hhsprings.bitbucket.io/docs/programming/examples/ffmpeg/video_data_visualization/histogram.html  
 
 ### ignore: workflow notes for future self:
 - modify code on NiCornD7000
