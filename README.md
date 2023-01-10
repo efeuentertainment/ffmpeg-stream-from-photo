@@ -44,6 +44,9 @@ multiple lines https://stackoverflow.com/questions/8213865/ffmpeg-drawtext-over-
 doc https://trac.ffmpeg.org/wiki/Histogram  
 overlay https://hhsprings.bitbucket.io/docs/programming/examples/ffmpeg/video_data_visualization/histogram.html  
 
+### gphoto2 MF
+without autofocus https://github.com/gphoto/gphoto2/issues/161#issuecomment-419718488
+
 ### ignore: workflow notes for future self:
 - modify code on NiCornD7000
 - compile using 
